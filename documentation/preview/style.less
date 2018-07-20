@@ -1,0 +1,90 @@
+@import "./lib";
+
+.previewContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	padding-left: 340px;
+
+}
+
+	.previewNavigation {
+		flex-basis: 300px;
+		width: 300px;
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+	}
+
+	.previewContent {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.previewBlocks {
+		padding-left: 20px;
+		padding-right: 40px;
+		padding-top: 20px;
+	}
+
+	.previewBlock {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: nowrap;
+		padding: 20px 0 20px 0;
+		border-bottom: 1px solid #eee;
+	}
+
+	.previewExample {
+		width: 382px;
+		padding: 5px;
+		margin: 0 40px 0 0;
+		flex-shrink: 0;
+	}
+
+	.previewCode {
+		flex-grow: 1;
+		overflow: hidden;
+	}
+
+	.previewBlocksWrap {
+		width: 100%;
+		display: block;
+	}
+
+pre[class*=language-] {
+	overflow: auto;
+	width: 100%;
+}
+
+.dynamic-color .red,.dynamic-color .pink,.dynamic-color .purple,.dynamic-color .deep-purple,.dynamic-color .indigo,.dynamic-color .blue,.dynamic-color .light-blue,.dynamic-color .cyan,.dynamic-color .teal,.dynamic-color .green,.dynamic-color .light-green,.dynamic-color .lime,.dynamic-color .yellow,.dynamic-color .amber,.dynamic-color .orange,.dynamic-color .deep-orange,.dynamic-color .brown,.dynamic-color .grey,.dynamic-color .blue-grey,.dynamic-color .black,.dynamic-color .white,.dynamic-color .transparent {
+  height: 55px;
+  width: 100%;
+  padding: 0 15px;
+  line-height: 55px;
+  font-weight: 500;
+  font-size: 12px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.dynamic-color .col {
+  margin-bottom: 55px
+}
+
+ul.side-nav.fixed ul.collapsible-accordion .inner li ul li a {
+	font-weight: 400;
+	padding: 0 57.5px 0 65px;
+	color: #999;
+}
+
+ul.side-nav.fixed ul.collapsible-accordion .inner li ul li a.active {
+	background-color: #ff9e80 ;
+	color: #fff;
+}

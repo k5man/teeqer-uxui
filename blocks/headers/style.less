@@ -1,0 +1,35 @@
+@import "../../assets/css/use";
+
+.title-block {
+	margin: @card-padding 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.title-block__icon {
+	max-width: 42px;
+	max-height: 42px;
+	overflow: hidden;
+	margin-right: 15px;
+	align-self: center;
+}
+
+.title-block__icon-rounded {
+	border-radius: 50%;
+}
+
+.title-block__text {
+	align-self: flex-start;
+	flex-grow: 1;
+}
+
+.card-header .title-block:first-child {
+	margin-top: 0;
+}
+
+.card-header .title-block:last-child {
+	margin-bottom: 0;
+}

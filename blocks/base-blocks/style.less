@@ -1,0 +1,24 @@
+@import "../../assets/css/use";
+
+.block-with-columns {
+	padding: @card-padding;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: left;
+	flex-wrap: nowrap;
+
+	.block-left-column {
+		min-width: 100px;
+		max-width: 150px;
+		margin: 0 15px 0 25px;
+		border-right: 1px solid @primary-color;
+	}
+
+	.block-right-column {
+		min-width: 200px;
+	}
+
+}
+
+

@@ -1,0 +1,9 @@
+.idea
+config.js
+webpack.*.js
+build.js
+build/*
+build-script/*
+node_modules/*
+**/node_modules/*
+
