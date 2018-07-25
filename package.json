@@ -1,7 +1,7 @@
 {
-  "name": "teekback-uxui",
-  "version": "2.9.0",
-  "description": "UI library.",
+  "name": "teeqer-uxui",
+  "version": "2.1.0",
+  "description": "Teeqer UX/UI library.",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -17,12 +17,12 @@
   "keywords": [
     "ui"
   ],
-  "author": "",
+  "author": "Teeqer Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/k5man/teekback-uxui/issues"
+    "url": "https://github.com/k5man/teeqer-uxui/issues"
   },
-  "homepage": "https://github.com/k5man/teekback-uxui#readme",
+  "homepage": "https://github.com/k5man/teeqer-uxui#readme",
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",

@@ -1,4 +1,4 @@
-import { Card, CardContent } from '../../card/index';
+import { Teeq } from '../../teeq/index';
 
 export default {
 	title: 'Base styles',
@@ -32,8 +32,8 @@ export default {
 </Card>`,
 			component: () => {
 				return (
-					<Card>
-						<CardContent>
+					<Teeq>
+						<div>
 							<h1>Heading h1</h1>
 							<h2>Heading h2</h2>
 							<h3>Heading h3</h3>
@@ -55,8 +55,8 @@ export default {
 								<li>List item 2</li>
 								<li>List item 3</li>
 							</ol>
-						</CardContent>
-					</Card>
+						</div>
+					</Teeq>
 				);
 			},
 		},
@@ -75,16 +75,16 @@ export default {
 </Card>`,
 			component: () => {
 				return (
-					<Card>
-						<CardContent>
+					<Teeq>
+						<div>
 							<h4 className="truncate">This is an extremely long title that will be truncated</h4>
 							<ul className="browser-default">
 								<li>List item 1</li>
 								<li>List item 2</li>
 								<li>List item 3</li>
 							</ul>
-						</CardContent>
-					</Card>
+						</div>
+					</Teeq>
 				);
 			},
 		},
