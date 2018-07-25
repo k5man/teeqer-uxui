@@ -6,7 +6,7 @@ export default class Teeq extends BaseComponent {
 	drawLoader() {
 		return (
 			<div className="teeq-preloader ">
-				<div className={`progress ${this.props.size} ${this.props.active} ${this.props.className}`}>
+				<div className={`progress ${this.props.size}`}>
 					<div className="indeterminate" />
 				</div>
 			</div>
@@ -16,7 +16,7 @@ export default class Teeq extends BaseComponent {
 	render() {
 		return (
 			<div
-				className={`teeq-block ${this.props.expanded ? 'teeq-expanded' : 'teeq-collapsed'} ${this.getClassName()}`}
+				className={`teeq-block ${this.props.view} ${this.getClassName()}`}
 				{...this.getCustomProps()}
 			>
 				{this.props.showLoader && this.drawLoader()}
@@ -30,12 +30,12 @@ export default class Teeq extends BaseComponent {
 Teeq.propTypes = {
 	className: PropTypes.string,
 	showLoader: PropTypes.bool,
-	expanded: PropTypes.bool,
+	view: PropTypes.string,
 };
 
 Teeq.defaultProps = {
 	className: '',
 	showLoader: false,
-	expanded: true,
+	view: 'expanded',
 };
 

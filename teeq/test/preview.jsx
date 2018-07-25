@@ -10,7 +10,7 @@ export default {
 </Teeq>`,
 			component: () => {
 				return (
-					<Teeq expanded="true" />
+					<Teeq view="collapsed" />
 				);
 			},
 		},
